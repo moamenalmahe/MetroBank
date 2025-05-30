@@ -1,0 +1,114 @@
+/* Button spacing fixes */
+.btn, .btn_red, .btn_darkRed, .btn_white {
+    margin-bottom: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+@media screen and (max-width: 37.5em) {
+    .btn, .btn_red, .btn_darkRed, .btn_white {
+        margin-bottom: 0.75rem !important;
+        margin-right: 0.625rem !important;
+    }
+    
+    .header .bottomNav ul li {
+        padding: 0.25rem 0;
+    }
+    
+    .header .bottomNav ul li a,
+    .header .bottomNav ul li > span {
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+.btn:last-child, .btn_red:last-child, .btn_darkRed:last-child, .btn_white:last-child {
+    margin-right: 0 !important;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.btn-group > * {
+    margin: 0 !important;
+}
+
+/* Fix vertical spacing between button rows */
+p .btn,
+p .btn_red,
+p .btn_darkRed,
+p .btn_white {
+    margin-bottom: 1.25rem !important;
+}
+
+/* Ensure proper vertical spacing in mobile view */
+@media screen and (max-width: 37.5em) {
+    .contentBlock-cta,
+    .hero-cta,
+    .messageBlock-cta {
+        margin-top: 1.5rem !important;
+    }
+}
+
+/* Navigation menu fixes */
+.header .topNav ul li {
+    margin: 0 1.5rem 0 0;
+}
+
+.header .bottomNav {
+    margin-top: 1rem;
+}
+
+.header .bottomNav ul li {
+    padding: 0.5rem 0;
+}
+
+.header .bottomNav ul li a,
+.header .bottomNav ul li > span {
+    padding: 0.75rem 1rem;
+    display: block;
+}
+
+.header .bottomNav ul li ul {
+    margin-top: 0.5rem;
+}
+
+.header .bottomNav ul li ul li {
+    padding: 0;
+}
+
+.header .bottomNav ul li ul li a,
+.header .bottomNav ul li ul li > span {
+    padding: 0.75rem 1.5rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 73.375em) {
+    .header .bottomNav {
+        padding-top: 1.5rem;
+    }
+    
+    .header .bottomNav ul li {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Fix vertical spacing between button rows */
+p .btn,
+p .btn_red,
+p .btn_darkRed,
+p .btn_white {
+    margin-bottom: 1.25rem !important;
+}
+
+/* Ensure proper vertical spacing in mobile view */
+@media screen and (max-width: 37.5em) {
+    .contentBlock-cta,
+    .hero-cta,
+    .messageBlock-cta {
+        margin-top: 1.5rem !important;
+    }
+} 

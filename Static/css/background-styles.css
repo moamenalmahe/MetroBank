@@ -1,0 +1,150 @@
+/* Background styles for main sections */
+.about-section,
+.business-section,
+.personal-section,
+.service-status-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-section {
+    background-image: url('/Static/images/background/About.jpg');
+    background-size: 2000px 660px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 660px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.business-section {
+    background-image: url('/Static/images/background/business.jpg');
+    background-size: 2000px 660px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 660px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Enhanced personal section styles */
+.personal-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Static/images/background/personal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 660px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.personal-section .l-container-wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.personal-section .headerIntroBlock {
+    color: #ffffff;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.personal-section .headerIntroBlock-header {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.personal-section .headerIntroBlock-intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.service-status-section {
+    background-image: url('/Static/images/background/Service status.jpg');
+    background-size: 2000px 370px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 370px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Overlay for better text readability if needed */
+.section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+/* Media queries for personal section */
+@media (max-width: 768px) {
+    .personal-section {
+        min-height: 500px;
+    }
+
+    .personal-section .headerIntroBlock-header {
+        font-size: 2rem;
+    }
+
+    .personal-section .headerIntroBlock-intro {
+        font-size: 1.1rem;
+    }
+}
+
+/* Fix for iOS devices */
+@supports (-webkit-touch-callout: none) {
+    .personal-section {
+        background-attachment: scroll !important;
+    }
+}
+
+/* Additional styles for text contrast */
+.personal-section .headerIntroBlock-text_black {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
