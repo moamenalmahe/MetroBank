@@ -92,7 +92,7 @@ Monitor performance using:
 4. Maintain accessibility standards
 
 ## License
-Proprietary - Metro Bank PLC 
+Proprietary - Metro Bank PLC
 
 # Metrobankdemo
 
