@@ -26,4 +26,4 @@ logs/
 
 # Cache
 .cache/
-.npm/ 
+.npm/ node_modules/ 
